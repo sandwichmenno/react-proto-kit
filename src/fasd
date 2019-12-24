@@ -1,0 +1,18 @@
+<Grid name="wrapper" cols={12} rows={10} width='100vw' height='100vh'>
+          <Cell name="header" x={0} y={0} width={12} height={1}>
+              <Grid cols={5} rows={1} width='100%' height='100%'>
+                  <Cell x={0} y={0} width={2} height={1}>
+                      <Image name="logo" src='https://www.hu.nl/-/media/hu/afbeeldingen/algemeen/hu-logo.ashx' alt='HU Logo' spacing='0 0 0 25px' valign='center'/>
+                  </Cell>
+
+                  <Cell x={4} y={0} width={2} height={1}>
+                      <Nav name="navigation" items={['Home', 'About', 'Contact']} valign='center' spacing='0 25px 0 0'></Nav>
+                  </Cell>
+              </Grid>
+          </Cell>
+
+          <Cell x={0} y={1} width={2} height={9}>
+              <Image name="avatar" src="https://medgoldresources.com/wp-content/uploads/2018/02/avatar-placeholder.gif" width='96px' height='96px' halign='center' spacing='20px 0 0 0' circle/>
+              <Text type='header'/>
+          </Cell>
+      </Grid>
