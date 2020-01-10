@@ -7,4 +7,13 @@ config.breakpoints = {
     lg: 1024,
 };
 
+
+config.theme = {
+    colors: {
+        main: "#0065f2",
+        text: "#0065f2",
+        inverted: "#ffffff"
+    }
+}
+
 export default config;
