@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 import './App.css';
-import Grid from "./components/Grid";
+import Grid from "./components/Grid/Grid";
 import Cell from "./components/Cell";
 import Image from "./components/Image";
 import Nav from "./components/Nav";
 import Text from "./components/Text";
-import Button from "./components/Button";
+import Button from "./components/Button/Button";
 import TextArea from "./components/TextArea";
 import Form from "./components/Form";
 
