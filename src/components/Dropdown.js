@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import {alignment} from "../helper";
 
-const Dropdown = ({name, children, valign, halign, spacing, type, items, callback}) => {
+const Dropdown = ({name, children, valign, halign, spacing, background, color, border, type, padding, items, callback}) => {
     let buttonStyle = {
-        background: '#D0D9E2',
-        border: '0',
+        background: background,
+        border: border,
         outline: '0',
-        color: '#1F313D',
+        color: color,
         borderRadius: '0.3em',
-        padding: '10px 20px',
+        padding: padding,
         margin: spacing,
         cursor: 'pointer'
     };

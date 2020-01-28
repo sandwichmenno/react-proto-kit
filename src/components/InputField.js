@@ -1,14 +1,14 @@
 import React from 'react';
 import {alignment} from "../helper";
 
-const InputField = ({name, children, valign, halign, spacing, type, onChange, value, placeholder}) => {
+const InputField = ({name, children, valign, halign, spacing, type, background, border, color, padding, onChange, value, placeholder}) => {
     let inputStyle = {
-        background: '#ffffff',
-        border: '1px solid #eef6ff',
+        background: background,
+        border: border,
         outline: '0',
-        color: '#0065f2',
+        color: color,
         borderRadius: '0.3em',
-        padding: '10px 20px',
+        padding: padding,
         margin: spacing,
     };
 

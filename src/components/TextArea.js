@@ -1,14 +1,14 @@
 import React from 'react';
 import {alignment} from "../helper";
 
-const TextArea = ({name, children, valign, halign, spacing, width, height, onChange}) => {
+const TextArea = ({name, children, valign, halign, spacing, background, border, color, padding, width, height, onChange}) => {
     let textareaStyle = {
-        background: '#fff',
-        border: '1px solid #D0D9E2',
+        background: background,
+        border: border,
         outline: '0',
-        color: '#1F313D',
+        color: color,
         borderRadius: '0.3em',
-        padding: '10px 20px',
+        padding: padding,
         margin: spacing,
         width: width,
         height: height,

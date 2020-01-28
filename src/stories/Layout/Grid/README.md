@@ -1,0 +1,1 @@
+A `<Grid>` component is meant to hold one or more `<Cell>` components.

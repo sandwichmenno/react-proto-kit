@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 import './App.css';
-import Grid from "./components/Grid/Grid";
+import Grid from "./components/Grid";
 import Cell from "./components/Cell";
 import Image from "./components/Image";
 import Nav from "./components/Nav";
 import Text from "./components/Text";
-import Button from "./components/Button/Button";
+import Button from "./components/Button";
 import TextArea from "./components/TextArea";
 import Form from "./components/Form";
 
@@ -60,8 +60,8 @@ function App() {
                       <Cell sm="1" >
                           <Text type="placeholder" sentences="4" halign="left" textalign='left' spacing="35px 0 35px 0" />
                           <Form onSubmit={handleSubmit} width='100%'>
-                              <InputField name="email" onChange={handleChange} placeholder="example@mail.com"/>
-                              <Button type="submit" halign="left" spacing='0 0 0 15px' onClick={() => trackEvent({type: 'CLICK_NEWSLETTER_TOP'})}>Keep me up to date</Button>
+                              <InputField name="email" onChange={handleChange} background='#ffffff' border='1px solid #eef6ff' color='#0065f2' padding='10px 20px' placeholder="example@mail.com"/>
+                              <Button type="submit" halign="left" background='#0065f2' border='1px solid #ffffff' color='#ffffff' padding='10px 20px' spacing='0 0 0 15px' onClick={() => trackEvent({type: 'CLICK_NEWSLETTER_TOP'})}>Keep me up to date</Button>
                           </Form>
                           <Text type="label" spacing="10px 0 0 0">By clicking the button, you agree to our Terms and Conditions</Text>
                       </Cell>
@@ -142,8 +142,8 @@ function App() {
                           <Image name="logo" src='https://www.hu.nl/-/media/hu/afbeeldingen/algemeen/hu-logo.ashx' alt='HU Logo' valign='center'/>
                           <Text halign="left" textalign='left' spacing="35px 0 15px 0">Join our newsletter to stay up to date on features and releases,<br/>and receive exclusive bonuses and discounts</Text>
                           <Form onSubmit={handleSubmit} width='100%'>
-                              <InputField name="email" onChange={handleChange} placeholder="example@mail.com"/>
-                              <Button type="submit" halign="left" spacing='0 0 0 15px' onClick={() => trackEvent({type: 'CLICK_NEWSLETTER_FOOTER'})}>Sign me up</Button>
+                              <InputField name="email" onChange={handleChange} background='#ffffff' border='1px solid #eef6ff' color='#0065f2' padding='10px 20px' placeholder="example@mail.com"/>
+                              <Button type="submit" halign="left" spacing='0 0 0 15px' background='#0065f2' border='1px solid #ffffff' color='#ffffff' padding='10px 20px' onClick={() => trackEvent({type: 'CLICK_NEWSLETTER_FOOTER'})}>Sign me up</Button>
                           </Form>
                           <Text type="label" spacing="10px 0 0 0">By clicking the button, you agree to our Terms and Conditions</Text>
                       </Cell>
